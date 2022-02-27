@@ -160,7 +160,7 @@ void loop() {
         }
       }
     } 
-    if(millis() > (startMillis + 10000)){    // if timeout send a Y, then start over....
+    if(millis() > (startMillis + 9990)){    // if timeout send a Y, then start over....
       Serial3.println("T");    
        playTime = (millis() - startMillis);
       Serial3.println(playTime,DEC);   // Send the score time
